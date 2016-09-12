@@ -6,7 +6,7 @@
 
 		<title>Presentation</title>
 
-		<meta name="description" content="ANU 2016">
+		<meta name="description" content="IMB 2016 Talk">
 		<meta name="author" content="Michael J. Harms">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -424,12 +424,14 @@
 
             if (USE_LOCAL) {
                 var mathjax_location = 'MathJax-master/MathJax.js';
-                var jquery_location = 'js/jquery-1.11.2.min.js';
-                var bootstrap_location = 'js/bootstrap.min.js';
+                var jquery_location = 'presentation-data/js/jquery-2.1.4.min.js';
+                var bootstrap_location = 'presentation-data/js/bootstrap.min.js';
+                var d3_location = 'presentation-data/js/d3.min.js';
             } else {
                 var mathjax_location = 'https://cdn.mathjax.org/mathjax/latest/MathJax.js';
                 var jquery_location = 'https://code.jquery.com/jquery-2.1.4.min.js';
                 var bootstrap_location = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js';
+                var d3_location = 'https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js';
             }
 
 			// Full list of configuration options available at:
@@ -458,14 +460,16 @@
 					{ src: 'plugin/notes/notes.js', async: true },
                     { src: 'plugin/math/math.js', async: true },    // mathjax
                     { src: jquery_location } ,
-                    { src: bootstrap_location } 
+                    { src: bootstrap_location } ,
+                    { src: d3_location } 
 				]
 			});
+
+
 
 		</script>
 
 	</body>
 </html>
-
 
 
